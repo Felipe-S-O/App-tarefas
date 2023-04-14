@@ -11,9 +11,23 @@ export default function Home() {
   const [tarefa, setTarefa] = useState<Tarefa>(Tarefa.vazio())
 
   const tarefas = [
-    new Tarefa('Felipe','teste', '1'),
-    new Tarefa('Luci', 'teste', '2'),
-    new Tarefa('Fabiana','teste', '3')
+    new Tarefa('Felipe silva de oliveira  28', 'testejshdjhsajdhjashdjshajdhahdsfgsagsdfgsdfgsdfgsdfgfgsdfgsdfgsdohajdlashdlashdkldfgdttt 108', '15 4'),
+    new Tarefa('Felipe silva de oliveira5678', 'testejshdjhsajdhjashdjshajdhahdsfgsagsdfgsdfgsdfgsdfgfgsdfgsdfgsdohajdlashdlashdkldfgdttt fe', '155'),
+    new Tarefa('Felipe silva de oliveira5678', 'testejshdjhsajdhjashdjshajdhahdsfgsagsdfgsdfgsdfgsdfgfgsdfgsdfgsdohajdlashdlashdkldfgdttt fe', '155'),
+    new Tarefa('Felipe silva de oliveira5678', 'testejshdjhsajdhjashdjshajdhahdsfgsagsdfgsdfgsdfgsdfgfgsdfgsdfgsdohajdlashdlashdkldfgdttt fe', '155'),
+    new Tarefa('Felipe silva de oliveira5678', 'testejshdjhsajdhjashdjshajdhahdsfgsagsdfgsdfgsdfgsdfgfgsdfgsdfgsdohajdlashdlashdkldfgdttt fe', '155'),
+    new Tarefa('Felipe silva de oliveira5678', 'testejshdjhsajdhjashdjshajdhahdsfgsagsdfgsdfgsdfgsdfgfgsdfgsdfgsdohajdlashdlashdkldfgdttt fe', '155'),
+    new Tarefa('Felipe silva de oliveira5678', 'testejshdjhsajdhjashdjshajdhahdsfgsagsdfgsdfgsdfgsdfgfgsdfgsdfgsdohajdlashdlashdkldfgdttt fe', '155'),
+    new Tarefa('Felipe silva de oliveira5678', 'testejshdjhsajdhjashdjshajdhahdsfgsagsdfgsdfgsdfgsdfgfgsdfgsdfgsdohajdlashdlashdkldfgdttt fe', '155'),
+    new Tarefa('Felipe silva de oliveira5678', 'testejshdjhsajdhjashdjshajdhahdsfgsagsdfgsdfgsdfgsdfgfgsdfgsdfgsdohajdlashdlashdkldfgdttt fe', '155'),
+    new Tarefa('Felipe silva de oliveira5678', 'testejshdjhsajdhjashdjshajdhahdsfgsagsdfgsdfgsdfgsdfgfgsdfgsdfgsdohajdlashdlashdkldfgdttt fe', '155'),
+    new Tarefa('Felipe silva de oliveira5678', 'testejshdjhsajdhjashdjshajdhahdsfgsagsdfgsdfgsdfgsdfgfgsdfgsdfgsdohajdlashdlashdkldfgdttt fe', '155'),
+    new Tarefa('Felipe silva de oliveira5678', 'testejshdjhsajdhjashdjshajdhahdsfgsagsdfgsdfgsdfgsdfgfgsdfgsdfgsdohajdlashdlashdkldfgdttt fe', '155'),
+    new Tarefa('Felipe silva de oliveira5678', 'testejshdjhsajdhjashdjshajdhahdsfgsagsdfgsdfgsdfgsdfgfgsdfgsdfgsdohajdlashdlashdkldfgdttt fe', '155'),
+    new Tarefa('Felipe silva de oliveira5678', 'testejshdjhsajdhjashdjshajdhahdsfgsagsdfgsdfgsdfgsdfgfgsdfgsdfgsdohajdlashdlashdkldfgdttt fe', '155'),
+    new Tarefa('Felipe silva de oliveira5678', 'testejshdjhsajdhjashdjshajdhahdsfgsagsdfgsdfgsdfgsdfgfgsdfgsdfgsdohajdlashdlashdkldfgdttt fe', '155'),
+    new Tarefa('Felipe silva de oliveira5678', 'testejshdjhsajdhjashdjshajdhahdsfgsagsdfgsdfgsdfgsdfgfgsdfgsdfgsdohajdlashdlashdkldfgdttt fe', '155'),
+
   ]
 
   function tarefaSelecionada(tarefa: Tarefa) {
@@ -35,13 +49,12 @@ export default function Home() {
     console.log(tarefa)
     setVisivel('tabela')
   }
- 
- 
-  return (
-    <div className={` flex h-screen justify-center
-    bg-gradient-to-r from-purple-700  to-purple-500 `}>
 
-      <Layout titulo="Lista de Tarefas">
+
+  return (
+    <div className={` flex  justify-center items-baseline py-4`}>
+
+      <Layout titulo="Tarefas">
         {visivel === 'tabela' ? (
           <>
             <div className="flex justify-end">
@@ -54,10 +67,10 @@ export default function Home() {
               tarefaExcluida={tarefaExcluida}
             />
           </>
-        ) : <Formulario 
-        tarefa={tarefa}
-        tarefaMudou={salvarTarefa}
-        cancelado={() => setVisivel('tabela')} />}
+        ) : <Formulario
+          tarefa={tarefa}
+          tarefaMudou={salvarTarefa}
+          cancelado={() => setVisivel('tabela')} />}
 
       </Layout>
     </div>
