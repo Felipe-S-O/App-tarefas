@@ -38,7 +38,7 @@ export default function Home() {
  
  
   return (
-    <div className={` flex h-screen justify-center items-center 
+    <div className={` flex h-screen justify-center
     bg-gradient-to-r from-purple-700  to-purple-500 `}>
 
       <Layout titulo="Lista de Tarefas">
