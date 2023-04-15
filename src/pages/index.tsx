@@ -37,21 +37,47 @@ export default function Home() {
   function tarefaSelecionada(tarefa: Tarefa) {
     setTarefa(tarefa)
     setVisivel('form')
-    console.log(tarefa.titulo)
+    console.log(tarefa)
   }
 
   function tarefaExcluida(tarefa: Tarefa) {
-    console.log('Excluir... ' + tarefa.titulo)
+    axios.delete(URL + '/' + tarefa.id)
+      .then(function (response) {
+        console.log('🚀 Tarefa excluida com Sucesso! 🙅😁')
+        console.log(response)
+        caregaTabelaDeTarefa()
+      })
+      .catch(function (error) {
+        console.log('🚀 Erro ao excluir Tarefa! 😩😭')
+        console.error(error)
+      });
   }
 
   function novaTarefa() {
-    console.log(tarefa)
-    setTarefa(Tarefa.vazio)
+    setTarefa(Tarefa.vazio())
     setVisivel('form')
   }
-  
-  function salvarTarefa(tarefa: Tarefa) {
-    if (tarefa.titulo == '' || tarefa.descricao == '') {
+
+  function salvarOuAlterarTarefa(tarefa: Tarefa) {
+    if (tarefa.id) {
+      if (tarefa.titulo == '' || tarefa.descricao == '') {
+        alert('Todos os campos devem ser preenchidos ⚠️')
+      } else {
+        axios.put(URL + '/' + tarefa.id, {
+          titulo: tarefa.titulo,
+          descricao: tarefa.descricao
+        })
+          .then(function (response) {
+            console.log('🚀 Tarefa atualizada com Sucesso! 🙅😁')
+            console.log(response)
+            caregaTabelaDeTarefa()
+          })
+          .catch(function (error) {
+            console.log('🚀 Erro na atualização Tarefa! 😩😭')
+            console.error(error)
+          });
+      }
+    } else if (tarefa.titulo == '' || tarefa.descricao == '') {
       alert('Todos os campos devem ser preenchidos ⚠️')
     } else {
       axios.post(URL, {
@@ -64,10 +90,11 @@ export default function Home() {
           caregaTabelaDeTarefa()
         })
         .catch(function (error) {
-          console.log('🚀 Erro ao Consultar Api! 😩😭')
+          console.log('🚀 Erro ao Cadastra Tarefa! 😩😭')
           console.error(error)
         });
-      }
+    }
+
   }
 
 
@@ -90,7 +117,7 @@ export default function Home() {
         ) :
           <Formulario
             tarefa={tarefa}
-            tarefaMudou={salvarTarefa}
+            mudarTarefa={salvarOuAlterarTarefa}
             cancelado={() => setVisivel('tabela')} />}
       </Layout>
     </div>
