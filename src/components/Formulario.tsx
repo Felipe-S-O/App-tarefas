@@ -2,6 +2,7 @@ import { useState } from "react";
 import Entrada from "./Entrada";
 import Tarefa from "../core/Tarefa";
 import Botao from "./Botao";
+import { describe } from "node:test";
 
 interface FormularioProps {
     tarefa: Tarefa
@@ -25,7 +26,7 @@ export default function Formulario(props: FormularioProps) {
             <Entrada texto="Descrição" valor={descricao} valorMudou={setDescricao} />
 
             <div className="flex justify-end mt-7">
-                <Botao onClick={() => props.tarefaMudou?.(new Tarefa(titulo, descricao, id))}
+                <Botao onClick={() => props.tarefaMudou?.(new Tarefa( descricao, titulo, descricao))}
                  className="bg-gradient-to-r from-blue-400 to-blue-700 mr-2 ">
                     {id ? 'Alterar' : 'Salvar'}
                 </Botao>

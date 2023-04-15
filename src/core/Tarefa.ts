@@ -4,14 +4,14 @@ export default class Tarefa {
     #titulo: string
     #descricao: string
 
-    constructor(titulo: string, descricao: string, id: string = null ){
+    constructor(id: string = null, titulo: string, descricao: string ){
+        this.#id = id
         this.#titulo = titulo
         this.#descricao = descricao
-        this.#id = id
     }
 
     static vazio(){
-        return new Tarefa('','')
+        return new Tarefa(null,'','')
     }
 
     get id(){
