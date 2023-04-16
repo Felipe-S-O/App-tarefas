@@ -27,7 +27,7 @@ export default function Tabela(props: TabelaProps) {
     function renderizarDados() {
         return props.tarefa?.map((tarefa, i) => {
             return (
-                <tr key={tarefa.id} 
+                <tr key={tarefa.id}
                     className={`${i % 2 === 0 ? 'bg-purple-300' : 'bg-purple-400'}`}>
                     <th className="text-left p-4">{tarefa.id}</th>
                     <th className="text-left p-4">{tarefa.titulo}</th>
@@ -43,16 +43,16 @@ export default function Tabela(props: TabelaProps) {
             <td className="flex justify-center">
 
                 {props.tarefaSelecionada ? (
-                    <button onClick={()=> props.tarefaSelecionada?.(tarefa)}
-                     className="flex justify-center items-center
+                    <button onClick={() => props.tarefaSelecionada?.(tarefa)}
+                        className="flex justify-center items-center
                          text-green-600 rounded-full p-2 m-1
                          hover:bg-purple-50 "
                     >{iconeIdit}
                     </button>) : false}
 
                 {props.tarefaExcluida ? (
-                    <button onClick={()=> props.tarefaExcluida?.(tarefa)}
-                     className="flex justify-center items-center
+                    <button onClick={() => props.tarefaExcluida?.(tarefa)}
+                        className="flex justify-center items-center
                     text-red-500 rounded-full p-2 m-1
                     hover:bg-purple-50 " >
                         {iconeLixo}

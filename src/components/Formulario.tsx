@@ -26,10 +26,10 @@ export default function Formulario(props: FormularioProps) {
 
             <div className="flex justify-end mt-7">
                 <Botao onClick={() => props.mudarTarefa?.(new Tarefa(id, titulo, descricao))}
-                 className="bg-gradient-to-r from-blue-400 to-blue-700 mr-2 ">
+                 className="bg-gradient-to-r from-blue-700 to-blue-400 mr-2 hover:to-blue-700">
                     {id ? 'Alterar' : 'Salvar'}
                 </Botao>
-                <Botao onClick={props.cancelado} className="bg-gradient-to-r from-gray-400 to-gray-700">
+                <Botao onClick={props.cancelado} className="bg-gradient-to-r from-gray-700 to-gray-400 hover:to-gray-700">
                     Cancelar
                 </Botao>
             </div>
