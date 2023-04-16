@@ -74,14 +74,21 @@ Pagina do projeto [aqui](https://inottec.com.br/inottec-cdv/)
 
 ## Abrir e rodar o projeto
 
+- Extraia o arquivo compactado baixado
+- executa o comando abaixo para instalar as dependências
 ```bash
 # with npm
-npm install lottie-web
-
-# with bower
-bower install bodymovin
+npm install
 ```
-Para roda o inottec CDV, faça o [download](https://drive.google.com/drive/folders/18dkVchQlUY__EncRhXMa6aAckbXIhLkK?usp=sharing), para duvidas de instalação e usabilidade do sistema, na [inottec Academia](https://ftsolucoes.com/curso/inottec-cdv/) tem a instrução de instalação e o curso de usabilidade.
+- altera a constante URL dentro do index para o IP da sua Api exemplo abaixo 
+```js
+const URL = 'http://192.168.1.130:8080/api/tarefa';
+```
+- Para iniciar a aplicação executa o comando abaixo
+```bash
+# wit
+npm run dev
+```
 
 ## Desenvolvedor
 
