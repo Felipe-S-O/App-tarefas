@@ -1,6 +1,6 @@
 <h1 align="center">
   <p align="center">Lista de Tarefas</p>
-  <a href="https://inottec.com.br/inottec-cdv/"><img src="https://user-images.githubusercontent.com/63815922/216737345-dd7dd7e7-2328-423f-aaea-e0ae329cb87e.png?text=inottec-CDV#vitrinedev" alt="inottec"></a>
+  <a href="https://inottec.com.br/inottec-cdv/felipe"><img src="https://user-images.githubusercontent.com/63815922/232280305-997dbecf-cf4d-499f-a2c6-a6f5e4448c49.png?text=Lista de Tarefa#vitrinedev" alt="inottec"></a>
 </h1>
 
 <p align="center">
