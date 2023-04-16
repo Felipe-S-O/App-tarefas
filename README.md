@@ -29,7 +29,7 @@
 
 Lista de tarefa é uma aplicação web desenvolvida em react, com essa aplicação é posivel obiter o controle de todas as suas tarefas do dia a dias!
   
-![Tarefas](https://user-images.githubusercontent.com/63815922/216745392-36184965-98b9-4129-a230-6bda7aa5bf4f.png)
+![listaDeTarefa](https://user-images.githubusercontent.com/63815922/232278181-c5d56641-f8d3-40c6-8fd4-729c38e8b5b0.jpg)
 
 </p>
 
