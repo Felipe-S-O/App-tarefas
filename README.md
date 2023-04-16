@@ -74,7 +74,7 @@ Pagina do projeto [aqui](https://inottec.com.br/inottec-cdv/)
 
 ## Abrir e rodar o projeto
 
-- Extraia o arquivo compactado baixado
+- Extraia o arquivo compactado  que foi baixado
 - executa o comando abaixo para instalar as dependências
 ```bash
 # with npm
