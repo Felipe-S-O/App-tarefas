@@ -47,7 +47,7 @@ Lista de tarefa é uma aplicação web desenvolvida em react, com essa aplicaç�
 
 <div align="center">
   
-[inottec CDV](https://user-images.githubusercontent.com/63815922/186805668-6aae615d-3f24-48be-8a8d-d249456da74a.mp4)
+[Lista de Tarefa](https://user-images.githubusercontent.com/63815922/232279071-69e8a793-21cd-4fab-bcf0-6377658d94bf.mp4)
   
 </div>
 
