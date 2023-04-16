@@ -60,9 +60,9 @@ Lista de tarefa é uma aplicação web desenvolvida em react, com essa aplicaç�
 ## Ferramentas utilizadas
 <code><img width="40px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" title = "React"/></code>
 <code><img width="40px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" title = "Next.js"/></code>
-<code><img width="40px" src="https://axios-http.com/assets/logo.svg" title = "Axios"/></code>
-<code><img width="40px" src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.79614a5f61617ba49a0891494521226b.svg" title = "Tailwind"/></code>
-<code><img width="40px" src="https://sweetalert2.github.io/images/SweetAlert2.png" title = "SweetAlert"/></code>
+<code><img width="50px" src="https://axios-http.com/assets/logo.svg" title = "Axios"/></code>
+<code><img width="44px" src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.79614a5f61617ba49a0891494521226b.svg" title = "Tailwind"/></code>
+<code><img width="50px" src="https://sweetalert2.github.io/images/SweetAlert2.png" title = "SweetAlert"/></code>
 ###
 
 ## Acesso ao projeto
