@@ -8,7 +8,7 @@ import Tarefa from "../core/Tarefa"
 import axios from "axios"
 import Swal from "sweetalert2"
 
-const URL = 'http://192.168.1.130:8080/api/tarefa';
+const URL = 'https://api-lista-tarefa.herokuapp.com/api/tarefa';
 
 export default function Home() {
 
