@@ -1,6 +1,6 @@
 <h1 align="center">
   <p align="center">Lista de Tarefas</p>
-  <a href="https://inottec.com.br/inottec-cdv/felipe"><img src="https://user-images.githubusercontent.com/63815922/232280305-997dbecf-cf4d-499f-a2c6-a6f5e4448c49.png?text=Lista de Tarefa#vitrinedev" alt="inottec"></a>
+  <a href="https://inottec.com.br/felipe/"><img src="https://user-images.githubusercontent.com/63815922/232280305-997dbecf-cf4d-499f-a2c6-a6f5e4448c49.png?text=Lista de Tarefa#vitrinedev" alt="inottec"></a>
 </h1>
 
 <p align="center">
@@ -70,7 +70,7 @@ Lista de tarefa é uma aplicação web desenvolvida em react, com essa aplicaç�
 
 Você pode [acessar o código fonte do projeto](https://github.com/Felipe-S-O/App-tarefas) ou [baixá-lo](https://github.com/Felipe-S-O/App-tarefas/archive/refs/heads/main.zip).
 
-Pagina do projeto [aqui](https://inottec.com.br/inottec-cdv/)
+Pagina do projeto [aqui](https://tarefas-tawny.vercel.app/)
 
 ## Abrir e rodar o projeto
 
